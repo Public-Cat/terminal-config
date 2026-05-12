@@ -3,7 +3,11 @@
 My favorite terminal configs
 
 .zshrc:
-- ~/.zshrc
+- 'cp .zshrc ~/.zshrc'
+- 'source .zshrc'
 
-terminal.conf:
-- ~/.config/tmux/tmux.conf
+
+tmux.conf:
+- 'cp tmux.conf ~/.config/tmux/tmux.conf'
+- 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
+- 'tmux :source ~/.config/tmux/tmux.conf'
