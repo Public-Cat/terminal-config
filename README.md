@@ -3,7 +3,7 @@
 My favorite terminal configs
 
 Install:
-- Install zsh, tmux
+- Install zsh, tmux, fzf
 - Install jetbrain mono nerd font on ssh client
 - 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
 - ./install.sh
