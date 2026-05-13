@@ -2,12 +2,9 @@
 
 My favorite terminal configs
 
-.zshrc:
-- 'cp .zshrc ~/.zshrc'
-- 'source .zshrc'
-
-
-tmux.conf:
-- 'cp tmux.conf ~/.config/tmux/tmux.conf'
+Install:
+- Install zsh, tmux
+- Install jetbrain mono nerd font on ssh client
 - 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
-- 'tmux :source ~/.config/tmux/tmux.conf'
+- ./install.sh
+- restart shell and tmux
