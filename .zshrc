@@ -61,4 +61,19 @@ alias vim='nvim'
 alias tmux='tmux -u'
 
 # Shell integrations
-eval "$(fzf --zsh)"
+if command -v fzf &>/dev/null; then
+  if fzf --zsh &>/dev/null; then
+    # fzf >= 0.48
+    eval "$(fzf --zsh)"
+  else
+    # Older fzf: source the classic integration scripts wherever they live
+    for f in \
+      /usr/share/fzf/key-bindings.zsh \
+      /usr/share/fzf/completion.zsh \
+      /usr/share/doc/fzf/examples/key-bindings.zsh \
+      /usr/share/doc/fzf/examples/completion.zsh \
+      ~/.fzf.zsh; do
+      [[ -r "$f" ]] && source "$f"
+    done
+  fi
+fi
